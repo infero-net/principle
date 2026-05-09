@@ -1,0 +1,8 @@
+.DS_Store
+*.draft.bak
+*~
+.idea/
+.vscode/
+*.log
+*_log.txt
+docker_db_log*.txt
