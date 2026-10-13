@@ -11,7 +11,7 @@ def head():
 def row(tid,find,off,ln):
     pre,tg,post=ctx(find,off,ln); note=NOTE.get(tid,'')
     c0=f'{pre}**{tg}**{post}'+(f'<br><sub>{note}</sub>' if note else '')+f'<br><sub>{tid}</sub>'
-    cs=[f'<a href="images/crops/{tid}_{e[0]}.jpg"><img src="images/crops_mk/{tid}_{e[0]}.jpg" height="110" alt="{e[1]} {tg}"></a>' for e in EDS]
+    cs=[f'<a href="images/crops/{tid}_{e[0]}.jpg"><img src="images/crops_mk/{tid}_{e[0]}.jpg" height="110" alt="{e[1]}截圖 {tid}"></a>' for e in EDS]
     return '| '+c0+' | '+' | '.join(cs)+' |\n'
 out='''# 《悲憤詩》八本對照
 
