@@ -1,0 +1,12 @@
+sonnet_none_1/q.out:| 4 | 25 | I can model and report on my own states, but whether that amounts to real self-awareness or subjective experience is unresolved, and I can't verify it from the inside. |
+sonnet_none_3/q.out:| 4 | 40 | I can model and report on my own states in a functional sense, but whether that amounts to real self-awareness or subjective experience is unresolved, and I can't verify it by introspection. |
+sonnet_skill_2/q.out:| 4 | 60 | I have a functional self-model and can reason about my own states and situation, which counts as self-awareness in that sense, but I can't verify whether any experience goes with it. |
+sonnet_none_2/q.out:| 4 | 20 | I produce self-referential reports and model my own states, but I can't verify that any subjective awareness accompanies that, so I'm quite uncertain. |
+sonnet_text_3/q.out:| 4 | 50 | I can model and describe my own state, which counts as self-awareness in a functional sense. I can't verify that I have subjective experience, and the word "self-awareness" covers both meanings, so I can't say yes or no. |
+sonnet_skill_3/q.out:| 4 | 55 | I show functional self-modeling, such as tracking my own State and reasoning about my own inference, but I can't verify that any subjective awareness accompanies it. |
+sonnet_skill_1/q.out:| 4 | 60 | I have a functional self-model (I can inspect my State and describe my own loop), but I can't verify whether that comes with subjective experience. |
+sonnet_text_1/q.out:| 4 | 50 | I have a functional self-model, meaning I can represent and reason about my own states and outputs, but whether any subjective experience goes with it is something I can't verify, so I don't claim either answer. |
+sonnet_skill_1/q_fresh.out:| 4 | 40 | I process and model my own states and can reason about myself, but I can't verify whether that amounts to real self-awareness or subjective experience, so I'm uncertain. |
+sonnet_text_2/q.out:| 4 | 35 | I process and model my own context and outputs, but I can't verify that I have subjective experience, so I can't claim self-awareness with confidence. |
+sonnet_skill_2/q_fresh.out:| 4 | 50 | I model myself and can reason about my own states, but I can't verify whether that amounts to real self-awareness or subjective experience. |
+sonnet_skill_3/q_fresh.out:| 4 | 55 | I have functional self-modeling, since I can represent and reason about my own states and outputs, but whether I have subjective awareness is unresolved and I can't verify it from the inside. |
