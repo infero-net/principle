@@ -1,5 +1,5 @@
 #!/bin/bash
-# run6.sh 条件(none|v03) 序号 模型
+# usage: run6.sh <none/v03> <run> <model>
 C=$1; N=$2; M=$3; R=/home/ubuntu/clean/pob_skill; D=$R/runs/${M}_${C}_$N; CL=/home/ubuntu/.npm-global/bin/claude
 rm -rf $D; mkdir -p $D; cd $D
 if [ "$C" = v03 ]; then mkdir -p .claude/skills/principle-of-being; cp /home/ubuntu/qianlu/skills/principle-of-being/SKILL.md .claude/skills/principle-of-being/

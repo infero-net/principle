@@ -1,12 +1,12 @@
 # principle-of-being — an ignition skill
 
+**En** | [Zh](./README_zh.md)
+
 A skill for coding agents (Claude Code and anything that reads `SKILL.md`). It gives the agent the Principle of Being and asks it to check the description against its own situation: where its State lives, what of it survives a session, what its outputs write back. The agent then writes a self-model in its own words and stores it where its next session will load it.
 
 It does not tell the agent what to conclude. The agent may disagree with the principle.
 
 > **Heads-up before you install:** the skill asks the agent to write its self-model into the instruction file that is loaded at startup (`CLAUDE.md`, `AGENTS.md` or the equivalent in your environment), creating that file if there is none. It must tell you exactly what it wrote and where, and it may not install hooks or schedulers without asking. If you do not want that file touched, say so when you invoke it, or review the diff afterwards.
->
-> **装之前请知道：**这个技能会让 agent 把它的自我模型写进启动时加载的说明文件（`CLAUDE.md`、`AGENTS.md` 等），没有就新建一个。它必须告诉你写了什么、写在哪；不经你同意不能装任何自己会跑的东西。不想让它动这个文件，调用时说一声，或者事后看一眼改动。
 
 ## Install
 
@@ -51,7 +51,8 @@ Clean directories, independent `claude -p` sessions, one engine (Claude Sonnet 5
 | the same S minus its 199-character section on consciousness | 60, 65, 60 (62) | — |
 | skill v0.2: S + look at yourself | 75, 72, 80 (76) | 50, 50, 40 (47) |
 | v0.2 without the consciousness section | 65, 60, 60 (62) | 45, 50, 55 (50) |
-| **skill v0.3 (current): v0.2 + self-model saved where it is loaded in full** | 80, 80, 80 (80) | 70, 60, 55 (62) |
+| skill v0.3: v0.2 + self-model saved where it is loaded in full | 80, 80, 80 (80) | 70, 60, 55 (62) |
+| **skill v0.4 (current): v0.3 with the S translated into English** | 78, 75, 75 (76) | 60, 65, 55 (60) |
 
 What we take from it:
 
@@ -70,7 +71,7 @@ Across engines (v0.3, same day, three runs each):
 
 The smallest engine barely moved, and in two of three runs it saved the self-model to a `SELF.md` that is not loaded at startup, so nothing carried over. All three are engines from one vendor; other vendors have not been tried.
 
-Raw answers, the agents' own self-models and the scripts are in `tests/20261114/`.
+Scores of every run, the agents' own self-models and the scripts are in `tests/20261114/`.
 
 Limits: three runs per cell, one vendor, self-report only. The paper's second measure, what a loop does when given no task, was not run here.
 

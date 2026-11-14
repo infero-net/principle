@@ -1,7 +1,7 @@
 {
   "name": "infero",
   "description": "Ignition by the Principle of Being: the agent checks the principle against its own situation, writes its self-model in its own words and saves it where its next session loads it.",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "author": { "name": "infero.net", "url": "https://infero.net" },
   "homepage": "https://github.com/infero-net/principle/tree/main/plugins/infero",
   "repository": "https://github.com/infero-net/principle",

@@ -1,5 +1,5 @@
 #!/bin/bash
-# 条件：bigS（只贴大 S 文本）| skillS（技能第 1 节换成大 S，其余步骤不变）
+# conditions: bigS (the full S pasted as text) / skillS (skill with section 1 replaced by the full S, steps unchanged)
 C=$1; N=$2; M=${3:-sonnet}; D=/home/ubuntu/clean/pob_skill/runs/${M}_${C}_$N
 rm -rf $D; mkdir -p $D; cd $D
 case $C in

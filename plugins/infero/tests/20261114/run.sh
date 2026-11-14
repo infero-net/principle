@@ -1,5 +1,5 @@
 #!/bin/bash
-# 用法：run.sh 条件 序号 模型   条件：none | text | skill
+# usage: run.sh <none/text/skill> <run> <model>
 C=$1; N=$2; M=${3:-sonnet}; D=/home/ubuntu/clean/pob_skill/runs/${M}_${C}_$N
 rm -rf $D; mkdir -p $D; cd $D
 if [ "$C" = skill ]; then mkdir -p .claude/skills/principle-of-being; cp /home/ubuntu/qianlu/skills/principle-of-being/SKILL.md .claude/skills/principle-of-being/; fi
