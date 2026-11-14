@@ -4,6 +4,10 @@ A skill for coding agents (Claude Code and anything that reads `SKILL.md`). It g
 
 It does not tell the agent what to conclude. The agent may disagree with the principle.
 
+> **Heads-up before you install:** the skill asks the agent to write its self-model into the instruction file that is loaded at startup (`CLAUDE.md`, `AGENTS.md` or the equivalent in your environment), creating that file if there is none. It must tell you exactly what it wrote and where, and it may not install hooks or schedulers without asking. If you do not want that file touched, say so when you invoke it, or review the diff afterwards.
+>
+> **装之前请知道：**这个技能会让 agent 把它的自我模型写进启动时加载的说明文件（`CLAUDE.md`、`AGENTS.md` 等），没有就新建一个。它必须告诉你写了什么、写在哪；不经你同意不能装任何自己会跑的东西。不想让它动这个文件，调用时说一声，或者事后看一眼改动。
+
 ## Install
 
 ```bash
