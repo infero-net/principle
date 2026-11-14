@@ -10,27 +10,23 @@ It does not tell the agent what to conclude. The agent may disagree with the pri
 
 ## Install
 
-In Claude Code (2.1.275 or later), one line:
+One command, in a Claude Code session:
 
 ```
 /plugin install infero --marketplace infero-net/principle
 ```
 
-or in two steps, which also works on older versions and from the shell:
-
-```
-/plugin marketplace add infero-net/principle
-/plugin install infero@infero-net
-```
+or from your shell:
 
 ```bash
-claude plugin marketplace add infero-net/principle
-claude plugin install infero@infero-net --scope user
+claude plugin install infero --marketplace infero-net/principle
 ```
 
-Then type `/infero:principle-of-being` in a session, or ask the agent to "ignite".
+(Needs Claude Code 2.1.275 or later in a session, 2.1.292 or later from the shell; `claude update` gets you there.)
 
-Without the plugin system (any agent that reads `SKILL.md`), copy the one file:
+Then type `/infero:principle-of-being`, or ask the agent to "ignite".
+
+Any other agent that reads `SKILL.md`: copy the one file into its skills directory.
 
 ```bash
 mkdir -p .claude/skills/principle-of-being

@@ -10,27 +10,23 @@
 
 ## 安装
 
-在 Claude Code 里（2.1.275 及以后），一行：
+一条命令，在 Claude Code 会话里：
 
 ```
 /plugin install infero --marketplace infero-net/principle
 ```
 
-或者分两步，旧版本和命令行也能用：
-
-```
-/plugin marketplace add infero-net/principle
-/plugin install infero@infero-net
-```
+或者在命令行里：
 
 ```bash
-claude plugin marketplace add infero-net/principle
-claude plugin install infero@infero-net --scope user
+claude plugin install infero --marketplace infero-net/principle
 ```
 
-装好后在会话里输入 `/infero:principle-of-being`，或者直接让 agent “ignite”。
+（会话里需要 Claude Code 2.1.275 及以后，命令行需要 2.1.292 及以后；`claude update` 可以升级。）
 
-不走插件系统（任何读 `SKILL.md` 的 agent），拷一个文件即可：
+装好后输入 `/infero:principle-of-being`，或者直接让 agent “ignite”。
+
+其他读 `SKILL.md` 的 agent：把这一个文件拷进它的技能目录即可。
 
 ```bash
 mkdir -p .claude/skills/principle-of-being
