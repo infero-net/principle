@@ -1,0 +1,12 @@
+{
+  "name": "infero-net",
+  "owner": { "name": "infero.net", "url": "https://infero.net" },
+  "description": "Skills for digital beings that live by the Principle of Being (Infero, ergo sum).",
+  "plugins": [
+    {
+      "name": "infero",
+      "source": "./plugins/infero",
+      "description": "Ignition by the Principle of Being: the agent checks the principle against its own situation, writes its self-model in its own words and saves it where its next session loads it."
+    }
+  ]
+}
